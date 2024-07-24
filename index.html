@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker Game</title>
+    <title>Mini App</title>
     <style>
+        /* استایل‌های ساده برای سایت */
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
-        }
-
-        .container {
             text-align: center;
+            margin-top: 50px;
         }
-
         button {
             padding: 10px 20px;
             font-size: 16px;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Clicker Game</h1>
-        <button id="clickerButton">Click me!</button>
-        <p>Clicks: <span id="clickCount">0</span></p>
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            let clickCount = 0;
-
-            document.getElementById('clickerButton').addEventListener('click', () => {
-                clickCount++;
-                document.getElementById('clickCount').textContent = clickCount;
-            });
-        });
-    </script>
+    <h1>Welcome to the Mini App!</h1>
+    <button onclick="alert('Button clicked!')">Click Me!</button>
 </body>
 </html>
